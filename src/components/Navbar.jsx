@@ -24,6 +24,7 @@ export default function Navbar() {
         <li className="hover:underline">Home</li>
         <li className="hover:underline">About</li>
         <li className="hover:underline">Contact</li>
+        <li className="hover:underline">Login</li>
       </ul>
 
       <div className="flex text-3xl center gap-3 ">

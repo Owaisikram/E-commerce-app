@@ -1,17 +1,17 @@
-
-*{
-    --primary: #DB4444;
+* {
+  --primary: #db4444;
+  font-family: "Poppins";
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.bdr{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.bdr {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

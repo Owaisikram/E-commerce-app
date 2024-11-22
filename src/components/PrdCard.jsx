@@ -25,12 +25,16 @@ function Wcard(Props) {
           </div>
 
           <div className="flex justify-center items-center w-48 h-48 m-auto mb-6">
-            <img src={Props.productimage} alt="img" className="w-full h-full object-cover transform transition-transform duration-700 ease-in-out hover:scale-110" />
+            <img
+              src={Props.productimage}
+              alt="img"
+              className="w-full h-full object-cover transform transition-transform duration-700 ease-in-out hover:scale-110"
+            />
           </div>
         </div>
 
         <div className="pl-2">
-          <h1 className="pt-2 pb-2">{Props.productdetail}</h1>
+          <h1 className="pt-2 pb-2">{Props.productname}</h1>
           <p className="text-red-600 ">${Props.sale}</p>
           <img src={star} alt="" className="pt-1 pb-1" />
         </div>
@@ -39,11 +43,25 @@ function Wcard(Props) {
   );
 }
 
-export default function PrdCard() {
+export default function PrdCard(props) {
   return (
-    <div className="p-3 flex gap-4 flex-wrap">
+    <div className="p-3 flex flex-wrap justify-around">
       <Wcard
-        productimage={cardimages}
+        productimage={props.image}
+        discount={-35}
+        productname={props.detail}
+        sale={props.price}
+      />
+{/* 
+      <Wcard
+        productimage={props.image}
+        discount={-35}
+        productdetail={"HAVIT HV-G92 Gamepad"}
+        sale={890}
+      />
+
+      <Wcard
+        productimage={props.image}
         discount={-35}
         productdetail={"HAVIT HV-G92 Gamepad"}
         sale={890}
@@ -54,14 +72,7 @@ export default function PrdCard() {
         discount={-35}
         productdetail={"HAVIT HV-G92 Gamepad"}
         sale={890}
-      />
-
-      <Wcard
-        productimage={cardimages}
-        discount={-35}
-        productdetail={"HAVIT HV-G92 Gamepad"}
-        sale={890}
-      />
+      /> */}
     </div>
   );
 }
