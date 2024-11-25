@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { PiShoppingCart } from "react-icons/pi";
 import { FaRegUser } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -21,10 +22,10 @@ export default function Navbar() {
       </div>
 
       <ul className="flex gap-4">
-        <li className="hover:underline">Home</li>
-        <li className="hover:underline">About</li>
-        <li className="hover:underline">Contact</li>
-        <li className="hover:underline">Login</li>
+       <li> <Link to="/">Home</Link></li>
+       <li> <Link  to="/About">About</Link></li>
+        <li>  <Link  to="/Contact">Contact Us</Link></li>
+        <li><Link  to="/login">Login</Link></li>
       </ul>
 
       <div className="flex text-3xl center gap-3 ">
