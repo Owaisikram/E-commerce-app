@@ -2,7 +2,7 @@ import iphone from "../assets/images/iphoneimg.png"
 export default function Hero() {
   return (
     <div id=",maindiv" className="flex justify-around">
-      <div className="pl-2 w-56 border-r-2 border-gray-300 ">
+      <div className=" w-56 border-r-2 border-gray-300 ">
         <ul className="list-none space-y-3">
           <li>Woman’s Fashion</li>
           <li>Men’s Fashion</li>

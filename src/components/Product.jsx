@@ -43,7 +43,7 @@ export default function Product() {
         />
       </div>
 
-      <div className="flex flex-wrap gap-4 justify-center pt-5 ">
+      <div className="flex flex-wrap gap-4 gap-x-24 justify-center pt-5 ">
         {searchValue.length === 0 ? (
           <div className="min-h-screen flex items-center justify-center">
             <img src={notfound} alt="img" className="bg-transparent" />
@@ -54,9 +54,10 @@ export default function Product() {
         {searchValue.map((item) => (
           <PrdCard
             key={item.id}
-            image={item.thumbnail}
-            detail={item.title}
-            price={item.price}
+            productimage={item.thumbnail}
+            productname={item.title}
+            sale={item.price}
+            discount={-40}
           />
         ))}
       </div>

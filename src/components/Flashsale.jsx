@@ -1,7 +1,7 @@
 import imgtime from "../assets/images/timeimage.png"
 export default function Flashsale() {
   return (
-    <div className="pl-16" id="main">
+    <div id="main">
       <div className="flex gap-5 items-center">
         <div className="w-5 h-10 bg-[#DB4444] rounded"></div>
         <div className="text-[#DB4444] font-semibold"> Today's</div>

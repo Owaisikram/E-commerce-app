@@ -9,7 +9,7 @@ export default function Navbar() {
   const isLoggedIn = false;
   return (
     //logo and input Here..
-    <div className="h-28 flex justify-around items-center">
+    <div className="h-28 flex justify-between items-center container-x">
       <img src={logo} alt="logo" />
 
       <div className="border-red-500 rounded center w-60 h-10 bg-[#f5f5f5] px-3 font-sm">

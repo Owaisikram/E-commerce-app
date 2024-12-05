@@ -3,7 +3,7 @@ import star from "../assets/cardimages/Frame.png";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa6";
 
-function Wcard(Props) {
+export default function PrdCard(Props) {
   return (
     <div>
       <div className="w-64 relative bdr rounded-2xl">
@@ -43,16 +43,17 @@ function Wcard(Props) {
   );
 }
 
-export default function PrdCard(props) {
-  return (
-    <div className="p-3 flex flex-wrap justify-around">
-      <Wcard
-        productimage={props.image}
-        discount={-35}
-        productname={props.detail}
-        sale={props.price}
-      />
-{/* 
+// export default function PrdCard(props) {
+//   return (
+//     <div className="p-3 flex flex-wrap justify-around">
+//       <Wcard
+//         productimage={props.image}
+//         discount={-35}
+//         productname={props.detail}
+//         sale={props.price}
+//       />
+{
+  /* 
       <Wcard
         productimage={props.image}
         discount={-35}
@@ -72,7 +73,8 @@ export default function PrdCard(props) {
         discount={-35}
         productdetail={"HAVIT HV-G92 Gamepad"}
         sale={890}
-      /> */}
-    </div>
-  );
+      /> */
 }
+// </div>
+//   )
+// }

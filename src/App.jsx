@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Contact from "./pages/Contact";
-import Button from "./components/Button"
+import Button from "./components/Button";
 import Product from "./components/Product";
 import Footer from "./components/Footer";
 
@@ -28,7 +28,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/product" element={<Product />} />
-
 
         {isLoggedIn ? (
           <>
