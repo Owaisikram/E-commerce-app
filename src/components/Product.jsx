@@ -4,7 +4,7 @@ import PrdCard from "./PrdCard";
 import notfound from "../assets/images/notfound.png";
 
 export default function Product() {
-  const API_KEY = "https://dummyjson.com/products";
+  const API_KEY = "https://dummyjson.com/products?skip=30";
 
   const [products, setProducts] = useState([]);
 
@@ -53,11 +53,11 @@ export default function Product() {
         )}
         {searchValue.map((item) => (
           <PrdCard
-            key={item.id}
+            id={item.id}
             productimage={item.thumbnail}
             productname={item.title}
             sale={item.price}
-            discount={-40}
+            discount={Math.round(item.discountPercentage)}
           />
         ))}
       </div>

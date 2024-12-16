@@ -31,6 +31,19 @@
   padding: 50px;
 }
 
+.S_Underline:after {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 2px;
+  height: 0.125rem;
+  width: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.4s;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
 .border{
   border: 2px solid black;
 }

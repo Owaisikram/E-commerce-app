@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
+import ProductDetail from "./pages/ProductDetail";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Button from "./components/Button";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
 
         {isLoggedIn ? (
           <>

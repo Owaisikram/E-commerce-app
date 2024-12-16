@@ -15,9 +15,8 @@ import PrdCard from "./PrdCard";
 import useProduct from "../Hooks/useProducts";
 
 export default function Slider() {
-  const { products, error } = useProduct("limit=5&skip=39");
+  const { products, error } = useProduct("limit=7&skip=50");
 
-  // Error Handling or Loading State
   if (error) return <div>Error loading products</div>;
   if (!products) return <div>Loading...</div>;
 
@@ -32,12 +31,13 @@ export default function Slider() {
       scrollbar={{ draggable: true }}
       navigation
     >
-      {products?.slice(0, 5).map((item) => (
+      {products?.slice(0, 7).map((item) => (
         <SwiperSlide key={item.id}>
           <div id="product-container" className="flex gap-4">
             <PrdCard
+              id={item.id}
               productimage={item.thumbnail}
-              discount={-40}
+              discount={Math.round(item.discountPercentage)}
               productname={item.title}
               sale={item.price}
             />

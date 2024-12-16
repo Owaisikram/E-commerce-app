@@ -2,15 +2,19 @@ import cardimages from "../assets/cardimages/cards.jpg";
 import star from "../assets/cardimages/Frame.png";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function PrdCard(Props) {
   return (
     <div>
-      <div className="w-64 relative bdr rounded-2xl">
+      <Link
+        to={`/product/${Props.id}`}
+        className="w-64 relative bdr rounded-2xl"
+      >
         <div className="bg-[#F5F5F5] ">
           <div className="flex justify-between mb-3">
             <div className="bg-red-500 text-white  rounded w-14 h-7 text-center ml-3 mt-3">
-              <p>{Props.discount}%</p>
+              <p>-{Props.discount}%</p>
             </div>
 
             <div className="text-end  mr-3 mt-3 flex flex-col gap-3">
@@ -38,7 +42,7 @@ export default function PrdCard(Props) {
           <p className="text-red-600 ">${Props.sale}</p>
           <img src={star} alt="" className="pt-1 pb-1" />
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
