@@ -3,6 +3,9 @@ import img2 from "../assets/images/women.png";
 import img3 from "../assets/images/speakers.png";
 import img4 from "../assets/images/Perfume.png";
 import arrows from "../assets/images/arrows.png";
+import guarantee from "../assets/images/guarantee.png";
+import service from "../assets/images/service.png";
+import delivery from "../assets/images/delivery.png";
 
 export default function NewArrivalGrid() {
   return (
@@ -92,6 +95,12 @@ export default function NewArrivalGrid() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-row gap-4 center mt-9" id="bottom">
+        <div><img src={guarantee} alt="img" /></div>
+        <div><img src={service} alt="img" /></div>
+        <div><img src={delivery} alt="img" /></div>
       </div>
     </div>
   );
